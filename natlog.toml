@@ -1,0 +1,9 @@
+[listener]
+listen-ip = "0.0.0.0"
+listen-port = 5555
+workers = 32
+
+[ch]
+max-count       = 100000     # 50k records
+max-interval    = 30        # secs
+connection-string = "tcp://127.0.0.1:9000?database=natlog&compress=true&debug=false"
